@@ -1,0 +1,21 @@
+<!--pages/test/test.wxml-->
+<view class="{{active ? 'active' : false}}" id="div-{{number}}">{{message}}</view>
+<view wx:if="{{condition > 6}}">showit1</view>
+<view wx:else="{{condition > 1 }}">showit2</view>
+<view hidden="{{true}}">showit3</view>
+<view wx:for="{{items}}" wx:key="index" wx:for-item="ary">idx:{{index}},name:{{ary.name}}:{{ary.desc}}</view>
+<block wx:key="index" wx:for="{{items}}">
+  <view>idx:{{index}},desc:{{item.desc}}</view>
+</block>
+<view>原始是1，现在是{{number}}</view>
+<view>{{message}}</view>
+<view>key1:{{obj1.key1}} value:{{obj1.value}}</view>
+<button bindtap="reverse">反转文字</button>
+===========================================
+<button bindtap="reverseAry">数组倒序</button>
+===========================================
+<button bindtap="addAry">增加数组项</button>
+===========================================
+<button bindtap="changeObj">修改对象</button>
+===========================================
+<button bindtap="changeColor">修改颜色</button>

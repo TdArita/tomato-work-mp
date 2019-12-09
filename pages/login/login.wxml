@@ -1,0 +1,17 @@
+<view class="login-main">
+  <view class="login">
+    <view class="avatar">
+      <open-data type="userAvatarUrl"></open-data>
+    </view>
+    <view class="name-wrap">
+      <open-data type="userNickName" class="name"></open-data>
+    </view>
+    <button class="loginBtn gradient mini" 
+            open-type="getUserInfo" 
+            bindgetuserinfo="login" 
+            withCredentials="true">
+            登录
+    </button>
+    <navigator class="text" url="/pages/binding/binding">还没有与pc端绑定？去绑定 ></navigator>
+  </view>
+</view>

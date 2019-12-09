@@ -1,0 +1,19 @@
+<view class="binding-wrap">
+  <view class="binding">
+    <view class="title" wx:if="{{pageStatus == 'binding'}}">绑定PC帐号
+      <view class="time-dec"></view>
+    </view>
+
+    <view class="title" wx:if="{{pageStatus == 'register'}}">注册PC帐号
+      <view class="time-dec"></view>
+    </view>
+    
+    <view class="input-wrap">
+      <input placeholder="帐号" bindinput="watchAccount" value="{{account}}"></input>
+      <input type="password" placeholder="密码" bindinput="watchPassword" value="{{password}}"></input>
+    </view>
+    <button class="loginBtn gradient mini" bindtap="btnClick">{{pageStatus == 'binding' ? '登录' : '注册'}}</button>
+    <view class="text" bindtap="toRegister" wx:if="{{pageStatus == 'binding'}}">还没有与pc端注册？去注册 ></view>
+    <image class="bg" src="/images/tomato-bg.png"></image>
+  </view>
+</view>

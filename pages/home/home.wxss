@@ -1,0 +1,76 @@
+page{
+  background: rgb(246, 246, 246);
+}
+scroll-view{
+  width: 100%;
+  height: 552rpx;
+  /* overflow: scroll-y; */
+  /* background: rgba(0, 0, 0, 0.05) */
+}
+
+.button-wrap{
+  display: absolute;
+  width: 100%;
+  height: 44rpx;
+  margin-top: 30rpx;
+}
+
+.tomato-wrapper{
+  position: absolute;
+  margin:  20rpx;
+  width: 710rpx;
+  height: 473rpx;
+  border-radius: 6px;
+  background: #eef7f6;
+  box-shadow: 0px 2rpx 6rpx rgba(0,0,0,0.2);
+  display: flex;
+  flex-direction: column;
+  /* align-content: center; */
+  align-items: center;
+  z-index: -1;
+}
+
+.tomato{
+  position: absolute;
+  top: 142rpx;
+}
+
+.item{
+  position: relative;
+  width: 690rpx;
+  height: 72rpx;
+  background: white;
+  margin: 21rpx;
+  border-radius: 8rpx;
+  box-shadow: 0px 0rpx 6rpx rgba(0,0,0,0.1);
+  display: flex;
+  align-items: center;
+}
+
+.item .select{
+  position: absolute;
+  width: 24rpx;
+  height: 24rpx;
+  left: 42rpx;
+  color: white;
+  border: 1rpx solid #f8765d;
+  border-radius: 999rpx;
+}
+.item .select.completed::after{
+  content: "";
+  position: absolute;
+  width: 18rpx;
+  height: 18rpx;
+  background: #f8765d;
+  border-radius: 999rpx;
+  z-index: 10;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%)
+}
+
+.item > text{
+  display: inline-block;
+  position: absolute;
+  left: 90rpx;
+}

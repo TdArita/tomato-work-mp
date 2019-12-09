@@ -1,0 +1,105 @@
+.main{
+  background: rgb(246, 246, 246);
+  height: 100vh;
+}
+.header{
+  position: relative;
+  height: 170rpx;
+}
+.avatar{
+  position: absolute;
+  width: 120rpx;
+  height: 120rpx;
+  top: 24rpx;
+  left: 40rpx;
+  border-radius: 999rpx;
+  overflow: hidden;
+}
+.name{
+  position: absolute;
+  top:30rpx;
+}
+.details{
+  position: absolute;
+  left: 197rpx;
+  height: 170rpx;
+}
+.details > text{
+  display: block;
+  position: absolute;
+  top: 99rpx;
+  width: 120rpx;
+  height: 25rpx;
+  color: #f6705a;
+  font-family: "PingFangSC-Regular";
+  font-size: 20rpx;
+  font-weight: 400;
+  line-height: 25rpx;
+}
+.qr::after{border: none}
+.qr {
+  display: inline-block;
+  background: transparent; 
+  color: #FE996F; 
+  font-size: 24rpx;
+  position: absolute;
+  right: 45rpx;
+  top:71rpx;
+  }
+.tabs{
+  position: relative;
+  margin-top: 23rpx;
+  margin-bottom: 25rpx;
+  background: white;
+  height: 80rpx;
+  display: flex;
+  font-size: 400;
+  justify-content: space-around;
+  align-items: center;
+}
+.tabs view{
+  position: relative;
+}
+.tabs .active::after{
+  content: "";
+  position: absolute;
+  top: 52rpx;
+  transform: translateX(-50%);
+  left: 50%;
+  width: 60%;
+  height: 8rpx;
+  border-radius: 5rpx;
+  background: linear-gradient(90deg, #FE996F, #F6705A);
+}
+.item{
+  position: relative;
+  width: 710rpx;
+  box-sizing: border-box;
+  margin: auto;
+  margin-bottom: 32rpx;
+  background: white;
+  padding: 16rpx 30rpx 33rpx 40rpx;
+}
+.time{
+  color: #333333;
+  z-index: 10;
+  font-family: "PingFangSC-Regular";
+  font-size: 36rpx;
+  font-weight: 400;
+  position: relative;
+}
+.time-dec{
+  position: absolute;
+  left: 40rpx;
+  top: 43rpx;
+  width: 110rpx;
+  height: 16rpx;
+  background: #ffdccf;
+}
+.item .content{
+  display: flex;
+  margin-top: 30rpx;
+}
+.item .content .detail{
+  padding-left: 40rpx;
+}

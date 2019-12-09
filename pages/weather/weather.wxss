@@ -1,0 +1,5 @@
+/* pages/weather/weather.wxss */
+button {
+  color: red;
+  font-size: 30rpx;
+}

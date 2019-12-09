@@ -1,0 +1,27 @@
+<view class="container">
+  <view class="text">距结束还有</view>
+
+  <view class="clock">
+    <g-clock>
+      <text class="time">{{transTime}}</text>
+    </g-clock>
+  </view>
+
+  <view class="btn-wrap" wx:if="{{time > 0}}">
+
+    <view class="stopBtn">
+      <g-button type="gradient" text="{{text}}" bindtap="toggleTimePass" size="mini"></g-button>
+    </view>
+
+    <view class="giveUpBtn">
+      <g-button text="放弃" bindtap="toggleConfirm" size="mini" ></g-button>
+    </view>
+  
+  </view>
+
+  <g-confirm placeholder="放弃理由" visible="{{giveUpconfirmVisible}}" bind:confirm="confirm" bind:cancel="cancel" ></g-confirm>
+
+  <g-confirm placeholder="完成了什么" visible="{{finishConfirmVisible}}" bind:confirm="thingsFinish" bind:cancel="cancelFinish" ></g-confirm>
+
+  <g-button bindtap="oneGroupMore" class="oneMore" wx:if="{{time === 0}}" type="gradient" text="再来一组" size="mini"></g-button>
+</view>

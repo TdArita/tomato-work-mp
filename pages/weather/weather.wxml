@@ -1,0 +1,4 @@
+<view>当前时间： {{date}}</view>
+<view>您当前所在城市：{{currWeather.currentCity}}</view>
+<view>实时天气：{{currWeather.weather_data[0].date}}</view>
+<button bindtap="getCurrWeather">一键获取</button>

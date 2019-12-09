@@ -1,0 +1,22 @@
+.container{
+  background: #eef7f6;
+  width: 100%;
+  height: 100vh;
+}
+.time.time{
+  font-size: 50rpx;
+}
+.text{
+  display: block;
+  top: 180rpx;
+}
+.clock{
+  margin-top: 91rpx;
+  /* position: absolute; */
+}
+.giveUpBtn{
+  margin-top:20rpx;
+}
+.oneMore{
+  margin-bottom: 110rpx;
+}
